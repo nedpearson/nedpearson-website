@@ -1,0 +1,15 @@
+document.getElementById("resumeUpload").addEventListener("change", function(event) {
+    const file = event.target.files[0];
+
+    if (file) {
+        const validExtensions = ["pdf", "doc", "docx"];
+        const fileExtension = file.name.split('.').pop().toLowerCase();
+
+        if (validExtensions.includes(fileExtension)) {
+            alert("Resume uploaded successfully: " + file.name);
+        } else {
+            alert("Invalid file type! Please upload a PDF or DOC file.");
+            event.target.value = ""; // Reset file input
+        }
+    }
+});
