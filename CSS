@@ -1,0 +1,78 @@
+/* Color Palette */
+:root {
+    --primary: #2589BD;
+    --secondary: #188394;
+    --accent: #38686A;
+    --light: #A3B4A2;
+    --background: #CDC6AE;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background);
+}
+
+header {
+    background: var(--primary);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+nav {
+    background: var(--secondary);
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+section {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: var(--accent);
+}
+
+footer {
+    text-align: center;
+    background: var(--secondary);
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+input[type="file"] {
+    display: block;
+    margin-top: 10px;
+    padding: 5px;
+}
+
+#fileName {
+    margin-top: 10px;
+    font-size: 14px;
+    color: var(--accent);
+}
